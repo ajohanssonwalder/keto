@@ -4,10 +4,7 @@
 [[projects]]
   branch = "master"
   name = "github.com/Azure/go-ansiterm"
-  packages = [
-    ".",
-    "winterm"
-  ]
+  packages = [".","winterm"]
   revision = "d6e3b3328b783f23731bc4d058875b0371ff8109"
 
 [[projects]]
@@ -97,10 +94,7 @@
 [[projects]]
   branch = "master"
   name = "github.com/golang/gddo"
-  packages = [
-    "httputil",
-    "httputil/header"
-  ]
+  packages = ["httputil","httputil/header"]
   revision = "daffe1f90ec57f8ed69464f9094753fc6452e983"
 
 [[projects]]
@@ -112,27 +106,13 @@
 [[projects]]
   branch = "master"
   name = "github.com/hashicorp/golang-lru"
-  packages = [
-    ".",
-    "simplelru"
-  ]
+  packages = [".","simplelru"]
   revision = "0fb14efe8c47ae851c0034ed7a448854d3d34cf3"
 
 [[projects]]
   branch = "master"
   name = "github.com/hashicorp/hcl"
-  packages = [
-    ".",
-    "hcl/ast",
-    "hcl/parser",
-    "hcl/printer",
-    "hcl/scanner",
-    "hcl/strconv",
-    "hcl/token",
-    "json/parser",
-    "json/scanner",
-    "json/token"
-  ]
+  packages = [".","hcl/ast","hcl/parser","hcl/printer","hcl/scanner","hcl/strconv","hcl/token","json/parser","json/scanner","json/token"]
   revision = "ef8a98b0bbce4a65b5aa4c368430a80ddc533168"
 
 [[projects]]
@@ -144,10 +124,7 @@
 [[projects]]
   branch = "master"
   name = "github.com/jmoiron/sqlx"
-  packages = [
-    ".",
-    "reflectx"
-  ]
+  packages = [".","reflectx"]
   revision = "0dae4fefe7c0e190f7b5a78dac28a1c82cc8d849"
 
 [[projects]]
@@ -165,18 +142,12 @@
 [[projects]]
   branch = "master"
   name = "github.com/lib/pq"
-  packages = [
-    ".",
-    "oid"
-  ]
+  packages = [".","oid"]
   revision = "90697d60dd844d5ef6ff15135d0203f65d2f53b8"
 
 [[projects]]
   name = "github.com/magiconair/properties"
-  packages = [
-    ".",
-    "assert"
-  ]
+  packages = [".","assert"]
   revision = "c2353362d570a7bfa228149c62842019201cfb71"
   version = "v1.8.0"
 
@@ -206,51 +177,19 @@
 
 [[projects]]
   name = "github.com/opencontainers/image-spec"
-  packages = [
-    "specs-go",
-    "specs-go/v1"
-  ]
+  packages = ["specs-go","specs-go/v1"]
   revision = "d60099175f88c47cd379c4738d158884749ed235"
   version = "v1.0.1"
 
 [[projects]]
   name = "github.com/opencontainers/runc"
-  packages = [
-    "libcontainer/system",
-    "libcontainer/user"
-  ]
+  packages = ["libcontainer/system","libcontainer/user"]
   revision = "baf6536d6259209c3edfa2b22237af82942d3dfa"
   version = "v0.1.1"
 
 [[projects]]
   name = "github.com/ory/dockertest"
-  packages = [
-    ".",
-    "docker",
-    "docker/opts",
-    "docker/pkg/archive",
-    "docker/pkg/fileutils",
-    "docker/pkg/homedir",
-    "docker/pkg/idtools",
-    "docker/pkg/ioutils",
-    "docker/pkg/jsonmessage",
-    "docker/pkg/longpath",
-    "docker/pkg/mount",
-    "docker/pkg/pools",
-    "docker/pkg/stdcopy",
-    "docker/pkg/system",
-    "docker/pkg/term",
-    "docker/pkg/term/windows",
-    "docker/types",
-    "docker/types/blkiodev",
-    "docker/types/container",
-    "docker/types/filters",
-    "docker/types/mount",
-    "docker/types/network",
-    "docker/types/registry",
-    "docker/types/strslice",
-    "docker/types/versions"
-  ]
+  packages = [".","docker","docker/opts","docker/pkg/archive","docker/pkg/fileutils","docker/pkg/homedir","docker/pkg/idtools","docker/pkg/ioutils","docker/pkg/jsonmessage","docker/pkg/longpath","docker/pkg/mount","docker/pkg/pools","docker/pkg/stdcopy","docker/pkg/system","docker/pkg/term","docker/pkg/term/windows","docker/types","docker/types/blkiodev","docker/types/container","docker/types/filters","docker/types/mount","docker/types/network","docker/types/registry","docker/types/strslice","docker/types/versions"]
   revision = "9bca068bf5e4af2484b9c2e8cfeb3d098d5327d7"
   version = "v3.3.1"
 
@@ -262,11 +201,7 @@
 
 [[projects]]
   name = "github.com/ory/go-convenience"
-  packages = [
-    "corsx",
-    "stringslice",
-    "stringsx"
-  ]
+  packages = ["corsx","stringslice","stringsx"]
   revision = "857ebcb1de6fdd166e791d976a46c3209d8355a8"
   version = "v0.0.4"
 
@@ -283,15 +218,9 @@
   version = "v0.3.0"
 
 [[projects]]
-  name = "github.com/ory/ladon"
-  packages = [
-    ".",
-    "compiler",
-    "manager/memory",
-    "manager/sql"
-  ]
-  revision = "76e069e27b002d186005c14b1f1b86472cc209f2"
-  version = "v0.8.10"
+  name = "github.com/ajohanssonwalder/ladon"
+  packages = [".","compiler","manager/memory","manager/sql"]
+  revision = "ed2fe75a02f64d7cc907bd4ad8c70783861bd4f6"
 
 [[projects]]
   branch = "master"
@@ -307,10 +236,7 @@
 
 [[projects]]
   name = "github.com/ory/sqlcon"
-  packages = [
-    ".",
-    "dockertest"
-  ]
+  packages = [".","dockertest"]
   revision = "7cb5a0f3099d9596e71128202e4bd54405927dfa"
   version = "v0.0.3"
 
@@ -353,10 +279,7 @@
 [[projects]]
   branch = "master"
   name = "github.com/rubenv/sql-migrate"
-  packages = [
-    ".",
-    "sqlparse"
-  ]
+  packages = [".","sqlparse"]
   revision = "3f452fc0ebebbb784fdab91f7bc79a31dcacab5c"
 
 [[projects]]
@@ -379,10 +302,7 @@
 
 [[projects]]
   name = "github.com/spf13/afero"
-  packages = [
-    ".",
-    "mem"
-  ]
+  packages = [".","mem"]
   revision = "787d034dfe70e44075ccc060d346146ef53270ad"
   version = "v1.1.1"
 
@@ -424,10 +344,7 @@
 
 [[projects]]
   name = "github.com/stretchr/testify"
-  packages = [
-    "assert",
-    "require"
-  ]
+  packages = ["assert","require"]
   revision = "f35b8ab0b5a2cef36673838d662e249dd9c94686"
   version = "v1.2.2"
 
@@ -446,78 +363,36 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = [
-    "bcrypt",
-    "blowfish",
-    "ed25519",
-    "ed25519/internal/edwards25519",
-    "ssh/terminal"
-  ]
+  packages = ["bcrypt","blowfish","ed25519","ed25519/internal/edwards25519","ssh/terminal"]
   revision = "a49355c7e3f8fe157a85be2f77e6e269a0f89602"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = [
-    "context",
-    "context/ctxhttp",
-    "idna",
-    "publicsuffix"
-  ]
+  packages = ["context","context/ctxhttp","idna","publicsuffix"]
   revision = "d0887baf81f4598189d4e12a37c6da86f0bba4d0"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/oauth2"
-  packages = [
-    ".",
-    "clientcredentials",
-    "internal"
-  ]
+  packages = [".","clientcredentials","internal"]
   revision = "ef147856a6ddbb60760db74283d2424e98c87bff"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = [
-    "unix",
-    "windows"
-  ]
+  packages = ["unix","windows"]
   revision = "ac767d655b305d4e9612f5f6e33120b9176c4ad4"
 
 [[projects]]
   name = "golang.org/x/text"
-  packages = [
-    "collate",
-    "collate/build",
-    "internal/colltab",
-    "internal/gen",
-    "internal/tag",
-    "internal/triegen",
-    "internal/ucd",
-    "language",
-    "secure/bidirule",
-    "transform",
-    "unicode/bidi",
-    "unicode/cldr",
-    "unicode/norm",
-    "unicode/rangetable"
-  ]
+  packages = ["collate","collate/build","internal/colltab","internal/gen","internal/tag","internal/triegen","internal/ucd","language","secure/bidirule","transform","unicode/bidi","unicode/cldr","unicode/norm","unicode/rangetable"]
   revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
   version = "v0.3.0"
 
 [[projects]]
   name = "google.golang.org/appengine"
-  packages = [
-    "cloudsql",
-    "internal",
-    "internal/base",
-    "internal/datastore",
-    "internal/log",
-    "internal/remote_api",
-    "internal/urlfetch",
-    "urlfetch"
-  ]
+  packages = ["cloudsql","internal","internal/base","internal/datastore","internal/log","internal/remote_api","internal/urlfetch","urlfetch"]
   revision = "b1f26356af11148e710935ed1ac8a7f5702c7612"
   version = "v1.1.0"
 
@@ -529,11 +404,7 @@
 
 [[projects]]
   name = "gopkg.in/square/go-jose.v2"
-  packages = [
-    ".",
-    "cipher",
-    "json"
-  ]
+  packages = [".","cipher","json"]
   revision = "76dd09796242edb5b897103a75df2645c028c960"
   version = "v2.1.6"
 
@@ -546,6 +417,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6fc06577dee7dc1d03d53f01bc53c8c20a851b4adcdef42ca45a7235828f51a5"
+  inputs-digest = "4e12a65b9c8a5ef07505f7bd1f647e5727c199a97b60ee43f8675b3a7e76987a"
   solver-name = "gps-cdcl"
   solver-version = 1

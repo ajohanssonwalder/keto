@@ -31,7 +31,7 @@ import (
 	"github.com/ory/keto/role"
 	"github.com/ory/ladon"
 	"github.com/ory/ladon/manager/memory"
-	"github.com/ory/ladon/manager/sql"
+	//"github.com/ory/ladon/manager/sql"
 	"github.com/ory/sqlcon"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
@@ -67,20 +67,20 @@ func newManagers(db string, logger logrus.FieldLogger) (*managers, error) {
 	case "postgres":
 		fallthrough
 	case "mysql":
-		sdb, err := connectToSQL(db, logger)
-		if err != nil {
-			return nil, errors.WithStack(err)
-		}
+		// sdb, err := connectToSQL(db, logger)
+		// if err != nil {
+		return nil, errors.WithStack(err)
+		// }
 
-		return &managers{
-			readyCheckers: map[string]health.ReadyChecker{
-				"database": func() error {
-					return sdb.GetDatabase().Ping()
-				},
-			},
-			roleManager:   role.NewSQLManager(sdb.GetDatabase()),
-			policyManager: sql.NewSQLManager(sdb.GetDatabase(), nil),
-		}, nil
+		// return &managers{
+		// 	readyCheckers: map[string]health.ReadyChecker{
+		// 		"database": func() error {
+		// 			return sdb.GetDatabase().Ping()
+		// 		},
+		// 	},
+		// 	roleManager:   role.NewSQLManager(sdb.GetDatabase()),
+		// 	policyManager: sql.NewSQLManager(sdb.GetDatabase(), nil),
+		// }, nil
 	}
 
 	return nil, errors.Errorf("The provided database URL %s can not be handled", db)

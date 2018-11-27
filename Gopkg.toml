@@ -70,8 +70,8 @@
   version = "0.3.0"
 
 [[constraint]]
-  name = "github.com/ory/ladon"
-  version = "0.8.9"
+  name = "github.com/ajohanssonwalder/ladon"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/ory/pagination"
